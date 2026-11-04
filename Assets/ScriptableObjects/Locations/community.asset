@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: community
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: community
+  displayName: Community Center
+  description: The barangay hall and covered court. A feeding program in the morning, meetings in the afternoon, and a bulletin board of odd jobs.
+  mapLabelRect:
+    serializedVersion: 2
+    x: 868
+    y: 127
+    width: 194
+    height: 43
+  sceneCenter: {x: 930, y: 230}
+  sceneZoom: 0.36
+  openHour: 7
+  closeHour: 17
+  unlock:
+    lockedAtStart: 1
+    minDay: 1
+    requiredFlag: met_neighbors
+    hint: Chat with the neighbors on the Neighborhood Street.
+  actions:
+  - id: lugaw
+    name: Free lugaw (feeding program)
+    description: Rice porridge from the barangay feeding program. Mornings only.
+    kind: 0
+    cost: 0
+    wage: 0
+    durationMinutes: 30
+    hunger: 30
+    energy: 0
+    health: 1
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 7
+    startHourTo: 10
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Warm lugaw with a boiled egg. The volunteers ask about your family.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ate Marites (volunteer)
+    playerLine: Is the feeding program still open?
+    npcLines:
+    - Of course. Here, one bowl with an egg. How are the children?
+    - Come, there's still some left. Take the egg, you need it.
+  - id: cleanup
+    name: Volunteer cleanup
+    description: Sweep and clean the covered court for a small stipend.
+    kind: 1
+    cost: 0
+    wage: 100
+    durationMinutes: 120
+    hunger: -5
+    energy: -12
+    health: 0
+    minigameId: sweep_court
+    skill: 1
+    childMinAge: 8
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 13
+    startHourTo: 15
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: The court is clean, and the barangay secretary hands you an envelope.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Mr. Santos (barangay secretary)
+    playerLine: Do you need volunteers for the cleanup?
+    npcLines:
+    - The court after the basketball game is a disaster. Sweep it all and the barangay pays a small stipend.
+    - Yes. Brooms are in the storage room. The captain's coming tomorrow, so make it shine.
+  - id: lugaw_family
+    name: Extra lugaw for the children
+    description: The volunteers fill a pot for the kids at home. Free, mornings only, once a day.
+    kind: 5
+    cost: 0
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 3
+    pagpagServings: 0
+    character: 
+    startHourFrom: 7
+    startHourTo: 10
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: '"For the little ones," the volunteer says.'
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ate Marites (volunteer)
+    playerLine: Is there extra lugaw for my children?
+    npcLines:
+    - Bring a container next time. Here, a full pot for the little ones.
+    - For your five? Of course. Tell them Ate Marites says hello.

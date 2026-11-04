@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: sarisari
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: sarisari
+  displayName: Sari-Sari Store
+  description: 'Aling Pacing''s little store sells everything in single servings: one egg, one sachet of coffee, one cigarette. She keeps a list of who owes her.'
+  mapLabelRect:
+    serializedVersion: 2
+    x: 1000
+    y: 319
+    width: 160
+    height: 45
+  sceneCenter: {x: 1070, y: 410}
+  sceneZoom: 0.36
+  openHour: 6
+  closeHour: 22
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: pandesal
+    name: Pandesal (5 pieces)
+    description: Bread rolls, still warm in the morning.
+    kind: 0
+    cost: 15
+    wage: 0
+    durationMinutes: 10
+    hunger: 15
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You eat them on the bench outside.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Pacing
+    playerLine: Five pandesal, Aling Pacing.
+    npcLines:
+    - Still warm. Five pesos more for the coffee sachet, if you want.
+    - Here you go. The bench outside is free.
+  - id: canton
+    name: Instant pancit canton
+    description: A pack of instant noodles. Aling Pacing lets you use her hot water.
+    kind: 0
+    cost: 20
+    wage: 0
+    durationMinutes: 15
+    hunger: 20
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Salty and quick.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Pacing
+    playerLine: One pancit canton, please.
+    npcLines:
+    - Use the hot water in the thermos. Don't take all of it.
+    - The spicy one? Here.
+  - id: sardines
+    name: Sardines and rice
+    description: A can of sardines in tomato sauce over a cup of rice.
+    kind: 0
+    cost: 40
+    wage: 0
+    durationMinutes: 20
+    hunger: 35
+    energy: 0
+    health: 1
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Cheap protein. Not bad at all.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Pacing
+    playerLine: Sardines and a cup of rice.
+    npcLines:
+    - Tomato sauce or chili? I'll open it for you.
+    - Good choice. Cheap and it fills you up.
+  - id: mind_store
+    name: Mind the store for Aling Pacing
+    description: Watch the counter and keep the debt list while Aling Pacing runs errands.
+    kind: 1
+    cost: 0
+    wage: 130
+    durationMinutes: 180
+    hunger: -5
+    energy: -8
+    health: 0
+    minigameId: make_change
+    skill: 2
+    childMinAge: 11
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 12
+    startHourTo: 18
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Aling Pacing counts the till, nods, and pays you.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Pacing
+    playerLine: Do you need someone to mind the store?
+    npcLines:
+    - I have errands until lunch. The debt list is in the notebook. Nobody gets credit without asking me.
+    - Yes! Write everything down. And don't let Mang Kanor charge another bottle.
+  - id: unload_store
+    name: Unload store deliveries
+    description: Carry cases of softdrinks and sacks of rice from the delivery truck.
+    kind: 1
+    cost: 0
+    wage: 70
+    durationMinutes: 60
+    hunger: -4
+    energy: -12
+    health: 0
+    minigameId: catch_cases
+    skill: 0
+    childMinAge: 12
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 8
+    startHourTo: 16
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Twenty cases of softdrinks later, Aling Pacing pays you.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Pacing
+    playerLine: Is the delivery truck here yet?
+    npcLines:
+    - Twenty cases of softdrinks and three sacks of rice. Careful, the bottles are glass.
+    - It just arrived. Stack them by the door, the heavy ones at the bottom.
+  - id: sari_family
+    name: Rice and canned goods for the family
+    description: A kilo of rice and two cans of sardines. Pricier per serving than the market, but open late.
+    kind: 5
+    cost: 110
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 4
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Aling Pacing adds a pack of crackers for the bunso.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Pacing
+    playerLine: Rice and canned goods for the family.
+    npcLines:
+    - For seven? I'll add crackers for the bunso.
+    - Here. Pay me today, ha? Your name is already on the list.

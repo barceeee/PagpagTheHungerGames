@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: train
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: train
+  displayName: Train Station
+  description: The last elevated railway stop before the slums. Commuters, vendors, and parcel couriers running between trains.
+  mapLabelRect:
+    serializedVersion: 2
+    x: 1068
+    y: 47
+    width: 154
+    height: 48
+  sceneCenter: {x: 1150, y: 130}
+  sceneZoom: 0.36
+  openHour: 6
+  closeHour: 22
+  unlock:
+    lockedAtStart: 1
+    minDay: 4
+    requiredFlag: 
+    hint: The station contractors only hire faces they've seen around. Available from Day 4.
+  actions:
+  - id: parcels
+    name: Parcel delivery runs
+    description: Run parcels from the station to shops around the district.
+    kind: 1
+    cost: 0
+    wage: 300
+    durationMinutes: 240
+    hunger: -10
+    energy: -28
+    health: 0
+    minigameId: parcel_route
+    skill: 2
+    childMinAge: 11
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 7
+    startHourTo: 14
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Fourteen deliveries and two angry dogs later, you're paid.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Kuya Ramil (dispatcher)
+    playerLine: Kuya Ramil, any parcels to run?
+    npcLines:
+    - Fourteen today, all over the district. Addresses are on the tags. Don't get lost.
+    - Perfect timing, my runner is sick. Here's the route.
+  - id: kiosk
+    name: Food kiosk helper
+    description: Serve siopao and coffee to commuters at the station kiosk.
+    kind: 1
+    cost: 0
+    wage: 270
+    durationMinutes: 240
+    hunger: -7
+    energy: -16
+    health: 0
+    minigameId: siopao_steam
+    skill: 1
+    childMinAge: 13
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 7
+    startHourTo: 14
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: The rush hour crowd is endless, but the owner pays well.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ms. Chua (kiosk owner)
+    playerLine: Ms. Chua, do you need help at the kiosk?
+    npcLines:
+    - Rush hour in ten minutes. Siopao in the steamer, coffee on the right. Smile.
+    - Yes, please. My nephew didn't show up again.

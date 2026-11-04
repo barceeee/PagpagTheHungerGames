@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: fishmarket
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: fishmarket
+  displayName: Fish Market
+  description: 'The fish landing before dawn: bancas unloading tubs of galunggong, ice everywhere, and buyers shouting prices.'
+  mapLabelRect:
+    serializedVersion: 2
+    x: 216
+    y: 208
+    width: 160
+    height: 44
+  sceneCenter: {x: 300, y: 300}
+  sceneZoom: 0.36
+  openHour: 3
+  closeHour: 14
+  unlock:
+    lockedAtStart: 1
+    minDay: 1
+    requiredFlag: worked_any
+    hint: Do any paid work first. Word gets around that you're willing to work.
+  actions:
+  - id: fish_porter
+    name: Fish porter
+    description: Carry tubs of fish and ice from the boats to the buyers. Starts before dawn.
+    kind: 1
+    cost: 0
+    wage: 210
+    durationMinutes: 180
+    hunger: -8
+    energy: -26
+    health: 0
+    minigameId: fish_relay
+    skill: 0
+    childMinAge: 14
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 3
+    startHourTo: 8
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You smell of fish and ice water, but you're paid on the spot.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Kapitan Ramon (boat owner)
+    playerLine: Kapitan, do you need porters?
+    npcLines:
+    - The bancas are in. Tubs to the buyers, ice on top. Run, the fish won't wait.
+    - Good catch tonight. Grab a tub, I pay by the trip.
+  - id: fish_clean
+    name: Clean and gut fish
+    description: Scale and gut fish for the vendors, fast and careful.
+    kind: 1
+    cost: 0
+    wage: 190
+    durationMinutes: 180
+    hunger: -6
+    energy: -16
+    health: 0
+    minigameId: gut_fish
+    skill: 1
+    childMinAge: 11
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 4
+    startHourTo: 9
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Your knife work impresses the vendors. One asks you to come back tomorrow.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Bebang (fish vendor)
+    playerLine: Aling Bebang, any fish to clean?
+    npcLines:
+    - Galunggong, a whole tub. Scales off, guts out, keep your fingers.
+    - Yes, yes. Sharp knife's in the bucket. The buyers want them clean by six.
+  - id: grilled_fish
+    name: Grilled fish and rice
+    description: Fresh galunggong grilled over coals.
+    kind: 0
+    cost: 55
+    wage: 0
+    durationMinutes: 30
+    hunger: 50
+    energy: 0
+    health: 3
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 5
+    startHourTo: 14
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Fresh fish. A small luxury.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Bebang (fish vendor)
+    playerLine: One grilled fish with rice.
+    npcLines:
+    - Straight from the boat to the coals. You won't find fresher.
+    - The biggest one, for you. Careful of the bones.
+  - id: fish_family
+    name: Fish and rice for the family
+    description: A tub of galunggong straight off the boat and a kilo of rice.
+    kind: 5
+    cost: 200
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 8
+    pagpagServings: 0
+    character: 
+    startHourFrom: 5
+    startHourTo: 14
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Fresh fish for everyone tonight.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Bebang (fish vendor)
+    playerLine: Fish and rice for the family.
+    npcLines:
+    - A whole tub of galunggong. Cook it tonight, it won't keep.
+    - For seven? Here, I'll add two more fish.

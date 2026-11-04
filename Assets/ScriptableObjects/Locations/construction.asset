@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: construction
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: construction
+  displayName: Construction Site
+  description: A four-story building going up on Mang Berto's watch. Hollow blocks, rebar and cement mixers. Workers are paid in cash at the end of each shift.
+  mapLabelRect:
+    serializedVersion: 2
+    x: 622
+    y: 555
+    width: 184
+    height: 45
+  sceneCenter: {x: 720, y: 680}
+  sceneZoom: 0.36
+  openHour: 6
+  closeHour: 17
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: con_morning
+    name: 'Morning shift: carry hollow blocks'
+    description: Haul hollow blocks up the scaffolding. Must start by 9 AM.
+    kind: 1
+    cost: 0
+    wage: 260
+    durationMinutes: 240
+    hunger: -10
+    energy: -30
+    health: 0
+    minigameId: hollow_blocks
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 6
+    startHourTo: 9
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You haul hollow blocks up the scaffolding until noon.
+    contactFlag: knows_mang_berto
+    contactMessage: Mang Berto claps you on the back. "Your father carried twice that." You finish the shift and get paid in cash.
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Mang Berto (foreman)
+    playerLine: Mang Berto, do you need another back this morning?
+    npcLines:
+    - Hollow blocks to the third floor. Hard hat on, and don't climb the scaffolding like a monkey.
+    - We're behind schedule. Grab blocks and keep them coming until noon.
+  - id: con_afternoon
+    name: 'Afternoon shift: mix cement'
+    description: Shovel sand, gravel and cement into the mixer. Must start by 2 PM.
+    kind: 1
+    cost: 0
+    wage: 240
+    durationMinutes: 240
+    hunger: -10
+    energy: -28
+    health: 0
+    minigameId: mix_cement
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 12
+    startHourTo: 14
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Your arms are grey with cement dust by the end of the shift.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Mang Berto (foreman)
+    playerLine: Any work for the afternoon shift?
+    npcLines:
+    - 'The mixer needs feeding: sand, gravel, cement, water. Keep the ratio right or the slab cracks.'
+    - Cement's here. Mix it properly, the inspector comes tomorrow.
+  - id: con_cook
+    name: Cook lunch for the crew
+    description: Help the site cook prepare rice and viand for thirty workers.
+    kind: 1
+    cost: 0
+    wage: 170
+    durationMinutes: 180
+    hunger: -4
+    energy: -12
+    health: 0
+    minigameId: cook_sequence
+    skill: 2
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 8
+    startHourTo: 11
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: The crew eats everything. Mang Berto asks how Dong is holding up.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Manang Cora (site cook)
+    playerLine: Manang Cora, can I help cook for the crew?
+    npcLines:
+    - Thirty men, one pot. Rice first, then the viand. Move fast, they eat at noon sharp.
+    - Thank God. Peel the garlic and watch the rice. Don't let it burn.

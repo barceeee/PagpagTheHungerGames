@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: market
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: market
+  displayName: Public Market
+  description: 'A maze of wet stalls under tarpaulin: fish, vegetables, rice by the kilo, and carinderias serving hot meals to vendors and porters.'
+  mapLabelRect:
+    serializedVersion: 2
+    x: 612
+    y: 297
+    width: 163
+    height: 43
+  sceneCenter: {x: 700, y: 420}
+  sceneZoom: 0.36
+  openHour: 5
+  closeHour: 19
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: carinderia
+    name: Carinderia meal (rice and adobo)
+    description: Rice, adobo and a bowl of soup at a carinderia.
+    kind: 0
+    cost: 70
+    wage: 0
+    durationMinutes: 30
+    hunger: 55
+    energy: 0
+    health: 3
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: A real meal. You feel human again.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ate Lorna (carinderia)
+    playerLine: Rice and adobo, Ate.
+    npcLines:
+    - Sit down, I'll add soup. You look like you need it.
+    - Adobo's fresh this morning. Extra rice is free if you don't tell anyone.
+  - id: rice_veg
+    name: Rice and vegetables (gulay)
+    description: Rice with a ladle of chopsuey or monggo.
+    kind: 0
+    cost: 45
+    wage: 0
+    durationMinutes: 30
+    hunger: 40
+    energy: 0
+    health: 2
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Simple and warm.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ate Lorna (carinderia)
+    playerLine: Just rice and gulay today.
+    npcLines:
+    - Chopsuey or monggo? Monggo's thicker today.
+    - Healthy choice! Here, I gave you the bigger ladle.
+  - id: haul_crates
+    name: Haul crates for the vendors
+    description: Carry crates of produce from the delivery trucks to the stalls.
+    kind: 1
+    cost: 0
+    wage: 180
+    durationMinutes: 180
+    hunger: -8
+    energy: -24
+    health: 0
+    minigameId: haul_balance
+    skill: 0
+    childMinAge: 13
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 5
+    startHourTo: 10
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Your shoulders burn, but the vendors pay in cash.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Kuya Jun (vendor boss)
+    playerLine: Kuya Jun, any work this morning?
+    npcLines:
+    - Truck from Benguet just came in. Crates to the stalls, and don't drop the tomatoes.
+    - You again? Good, the last guy quit. Start with the cabbage.
+  - id: sell_veg
+    name: Help Aling Nena sell vegetables
+    description: Arrange, weigh and sell vegetables at Aling Nena's stall.
+    kind: 1
+    cost: 0
+    wage: 200
+    durationMinutes: 240
+    hunger: -7
+    energy: -14
+    health: 0
+    minigameId: weigh_veg
+    skill: 3
+    childMinAge: 9
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 6
+    startHourTo: 11
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You sell vegetables until the morning crowd thins out.
+    contactFlag: knows_aling_nena
+    contactMessage: Aling Nena slips you an extra bunch of kangkong "for Dong." You sell out before noon.
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Nena
+    playerLine: Aling Nena, do you need help at the stall?
+    npcLines:
+    - Yes! Weigh honestly and smile at the customers. That's the whole secret.
+    - Come, come. The morning crowd is coming and my eyes can't read the scale anymore.
+  - id: bundle_veg
+    name: Sort and bundle vegetables
+    description: Trim, sort and tie tomorrow's vegetables into bundles for the vendors.
+    kind: 1
+    cost: 0
+    wage: 150
+    durationMinutes: 180
+    hunger: -5
+    energy: -10
+    health: 0
+    minigameId: bundle_match
+    skill: 1
+    childMinAge: 6
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 13
+    startHourTo: 16
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Rows of neat bundles, ready for the morning.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Aling Nena
+    playerLine: Can I help bundle tomorrow's vegetables?
+    npcLines:
+    - Kangkong in bunches of ten, pechay by size. Neat ones sell faster.
+    - Please. My hands are too slow now. The twine is under the table.
+  - id: market_family
+    name: Rice and viand for the family
+    description: Two kilos of rice and a big bag of vegetables and pork. The best value for a household.
+    kind: 5
+    cost: 240
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 10
+    pagpagServings: 0
+    character: 
+    startHourFrom: 5
+    startHourTo: 19
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You carry home enough for everyone.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Mang Dado (rice dealer)
+    playerLine: Two kilos of rice and some viand for the family.
+    npcLines:
+    - Seven mouths, ha? I'll throw in a little more pork. Don't tell my wife.
+    - Best price in Tondo. Here, carry it with both hands.

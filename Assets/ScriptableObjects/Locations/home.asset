@@ -1,0 +1,473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: home
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: home
+  displayName: Your Room
+  description: "A rented 2-by-3-meter room on stilts above the water, home to Dong, Inday and their five children. \u20B11,800 a month, a leaking roof, one electric fan, and the only place you can sleep in peace."
+  mapLabelRect:
+    serializedVersion: 2
+    x: 90
+    y: 487
+    width: 162
+    height: 45
+  sceneCenter: {x: 180, y: 590}
+  sceneZoom: 0.36
+  openHour: 0
+  closeHour: 24
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: sleep
+    name: Sleep (8 hours)
+    description: Lie down on the thin foam mattress and sleep the night through.
+    kind: 2
+    cost: 0
+    wage: 0
+    durationMinutes: 480
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You wake up stiff, but rested.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: nap
+    name: Nap (2 hours)
+    description: A short rest in the heat of the day.
+    kind: 2
+    cost: 0
+    wage: 0
+    durationMinutes: 120
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: The nap takes the edge off.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: cook_dong
+    name: Cook rice and instant noodles
+    description: 'Dong''s way of cooking: a pot of rice stretched with a pack of noodles. Fast and filling.'
+    kind: 0
+    cost: 30
+    wage: 0
+    durationMinutes: 30
+    hunger: 32
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You eat straight from the pot. It's enough.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: cook_inday
+    name: Cook rice and dried fish (tuyo)
+    description: Inday cooks the way her mother taught her. Cheap, filling and done properly.
+    kind: 0
+    cost: 40
+    wage: 0
+    durationMinutes: 45
+    hunger: 45
+    energy: 0
+    health: 2
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Rice, tuyo and a little vinegar. It tastes like home.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: talk_wife
+    name: Talk with Inday
+    description: Spend a few minutes with your wife.
+    kind: 3
+    cost: 0
+    wage: 0
+    durationMinutes: 20
+    hunger: 0
+    energy: 6
+    health: 1
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 1
+    requiresSpouse: 1
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Inday goes over the budget with you, then makes you laugh about the landlord's rooster. For a moment, things feel manageable.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Inday
+    playerLine: Inday, sit with me a minute.
+    npcLines:
+    - Five minutes, then I have to start the rice. What's on your mind, Dong?
+    - You look tired. Come here. The kids can wait for once.
+  - id: talk_husband
+    name: Talk with Dong
+    description: Spend a few minutes with your husband.
+    kind: 3
+    cost: 0
+    wage: 0
+    durationMinutes: 20
+    hunger: 0
+    energy: 6
+    health: 1
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 1
+    requiresSpouse: 1
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Dong tells you about his day in far too much detail and promises things will get better. You almost believe him, and you feel lighter.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Dong
+    playerLine: Dong, sit with me a minute.
+    npcLines:
+    - For you, always. Did I tell you what the landlord's rooster did this morning?
+    - Of course. Tell me about your day first, then I'll tell you about mine.
+  - id: family_meal
+    name: Serve a family meal
+    description: 'Feed everyone at home who is hungry, you included: one pantry serving each, youngest first.'
+    kind: 6
+    cost: 0
+    wage: 0
+    durationMinutes: 30
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: 
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: pantry_meal
+    name: Eat from the pantry
+    description: Take one serving from the family pantry for yourself.
+    kind: 7
+    cost: 0
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You eat quickly, standing up.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: intimacy
+    name: A quiet night together
+    description: 'When the children are asleep. Fades to black, then the wheel decides: a 5% chance of a sixth child, which the family could not survive.'
+    kind: 8
+    cost: 0
+    wage: 0
+    durationMinutes: 60
+    hunger: 0
+    energy: 5
+    health: 2
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 20
+    startHourTo: 2
+    oncePerDay: 1
+    requiresSpouse: 1
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: A rare, quiet night. You both feel a little lighter.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: '{spouse}'
+    playerLine: "The children are asleep\u2026"
+    npcLines:
+    - Then let's not wake them.
+    - Come here. Just for a little while, let's forget about everything else.
+  - id: take_dose
+    name: Take medicine
+    description: Take one dose from the medicine cabinet. For a day the illness eases instead of getting worse.
+    kind: 11
+    cost: 0
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: 
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: take_cure
+    name: Take the instant cure
+    description: Use the expensive instant cure from the cabinet. Any illness is gone within the hour.
+    kind: 11
+    cost: 0
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: 
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 1
+    speaker: 
+    playerLine: 
+    npcLines: []
+  - id: leave_slums
+    name: Leave the slums
+    description: "Pack up the family and leave Tondo for good. You need \u20B1100,000 saved. This ends the run."
+    kind: 9
+    cost: 0
+    wage: 0
+    durationMinutes: 0
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: You leave the slums behind.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: '{spouse}'
+    playerLine: We have enough now. Let's leave Tondo.
+    npcLines:
+    - Are we really doing this? Then let's pack before either of us changes our mind.
+    - Our children will grow up somewhere else. I never thought I'd hear you say it.

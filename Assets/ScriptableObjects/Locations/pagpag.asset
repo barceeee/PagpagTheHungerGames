@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: pagpag
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: pagpag
+  displayName: Pagpag Stall
+  description: 'Mang Itoy''s stall sells pagpag: leftover chicken and rice salvaged from fast-food bins, washed and recooked. Cheap and filling. Not always safe.'
+  mapLabelRect:
+    serializedVersion: 2
+    x: 396
+    y: 418
+    width: 149
+    height: 44
+  sceneCenter: {x: 480, y: 500}
+  sceneZoom: 0.36
+  openHour: 16
+  closeHour: 24
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: pagpag_chicken
+    name: Recooked pagpag chicken
+    description: Fried again in old oil. The cheapest way to fill your stomach.
+    kind: 0
+    cost: 25
+    wage: 0
+    durationMinutes: 15
+    hunger: 35
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0.15
+    riskHealth: 12
+    riskEnergy: 8
+    riskCause: Food poisoning
+    riskMessage: "Your stomach turns violently. That batch had gone bad. (Health \u221212)"
+    resultMessage: Salty, greasy and filling.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 1
+    instantCure: 0
+    speaker: Mang Itoy
+    playerLine: One chicken, Mang Itoy.
+    npcLines:
+    - Fresh from the bins this afternoon, washed twice. Mostly.
+    - Last pieces. Fried them again in the good oil. Well, the oil.
+  - id: pagpag_rice
+    name: Pagpag rice bowl
+    description: Leftover rice with scraps of meat and sauce.
+    kind: 0
+    cost: 15
+    wage: 0
+    durationMinutes: 10
+    hunger: 20
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0.08
+    riskHealth: 8
+    riskEnergy: 5
+    riskCause: Food poisoning
+    riskMessage: "Something in it was spoiled. You spend an hour doubled over. (Health \u22128)"
+    resultMessage: It's not much, but it quiets your stomach.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 1
+    instantCure: 0
+    speaker: Mang Itoy
+    playerLine: Just a rice bowl tonight.
+    npcLines:
+    - Rice and a little sauce. Fills the stomach, that's what matters.
+    - Here. Eat it while it's hot. It's better hot.
+  - id: pagpag_family
+    name: Pagpag bundle for the family
+    description: A plastic bag of recooked leftovers. Feeds a lot of people for very little, but each serving has a 15% chance of making someone sick.
+    kind: 5
+    cost: 70
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 6
+    pagpagServings: 1
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Mang Itoy fills a bag for the kids.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Mang Itoy
+    playerLine: A bag for the family, please.
+    npcLines:
+    - Enough for all your kids. Don't feed it to them every day, ha? I've seen what happens.
+    - Big bag tonight. Heat it well before they eat it.

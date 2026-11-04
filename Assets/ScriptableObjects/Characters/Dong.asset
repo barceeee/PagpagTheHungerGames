@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ea91e1fd12bb84bb36374f5524e696, type: 3}
+  m_Name: Dong
+  m_EditorClassIdentifier: Assembly-CSharp::Pagpag.Characters.CharacterProfile
+  id: dong
+  gender: 0
+  defaultName: Dong
+  portrait: {fileID: 21300000, guid: ebfcf5f0abcb04443bae47010ef02237, type: 3}
+  fullBody: {fileID: 21300000, guid: 7b9bac2cb2c161942b14fb3b0da87c8d, type: 3}
+  descriptionKey: char.dong.desc
+  loreKeys:
+  - char.dong.lore.1
+  - char.dong.lore.2
+  - char.dong.lore.3
+  spouseName: Inday
+  startingFlags:
+  - knows_mang_berto

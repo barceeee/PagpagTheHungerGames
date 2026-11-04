@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0cffe974ea24f4c93db0d0d0b33de0, type: 3}
+  m_Name: Hard
+  m_EditorClassIdentifier: Assembly-CSharp::Pagpag.Core.DifficultySettings
+  difficulty: 1
+  displayName: Bisaya
+  modeLabel: Hard
+  description: Hunger and energy drain 60% faster for you and all seven family members, and starving or collapsing hurts 60% more. Prices, wages and every other rule stay the same.
+  hungerRateMultiplier: 1.6
+  fatigueRateMultiplier: 1.6

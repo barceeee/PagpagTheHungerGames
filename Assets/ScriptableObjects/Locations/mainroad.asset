@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: mainroad
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: mainroad
+  displayName: Main Road
+  description: The highway where jeepneys, tricycles and trucks fight for space. Vendors sell taho and balut along the sidewalk.
+  mapLabelRect:
+    serializedVersion: 2
+    x: 1090
+    y: 638
+    width: 142
+    height: 44
+  sceneCenter: {x: 1100, y: 730}
+  sceneZoom: 0.36
+  openHour: 0
+  closeHour: 24
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: taho
+    name: Taho
+    description: Silken tofu with syrup and sago, from the vendor's buckets.
+    kind: 0
+    cost: 20
+    wage: 0
+    durationMinutes: 10
+    hunger: 12
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 6
+    startHourTo: 11
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Sweet and warm.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Manong Taho
+    playerLine: One taho, Manong.
+    npcLines:
+    - Extra sago for you. Taho! Tahoooo!
+    - Big or small? Big. I knew it.
+  - id: balut
+    name: Balut
+    description: A boiled duck egg with salt and vinegar.
+    kind: 0
+    cost: 25
+    wage: 0
+    durationMinutes: 10
+    hunger: 18
+    energy: 0
+    health: 1
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 18
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Rich and filling.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Mang Pido (balut vendor)
+    playerLine: One balut, please.
+    npcLines:
+    - Hot from the basket. Salt or vinegar?
+    - This one's a good one, I can tell.
+  - id: flyers
+    name: Hand out flyers
+    description: Pass out flyers for a lending company to passing commuters.
+    kind: 1
+    cost: 0
+    wage: 90
+    durationMinutes: 120
+    hunger: -5
+    energy: -10
+    health: 0
+    minigameId: hand_flyers
+    skill: 3
+    childMinAge: 6
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 8
+    startHourTo: 16
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Most people ignore you, but the agent pays anyway.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Sir Bong (lending agent)
+    playerLine: Do you still need someone for flyers?
+    npcLines:
+    - Five hundred flyers. Hand them to everyone, especially people who look worried.
+    - Yes. Smile, and don't read the interest rates out loud.

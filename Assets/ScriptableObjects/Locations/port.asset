@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: port
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: port
+  displayName: Port
+  description: North Harbor. Container cranes, forklifts and agency recruiters choosing day laborers at the gate.
+  mapLabelRect:
+    serializedVersion: 2
+    x: 95
+    y: 88
+    width: 140
+    height: 47
+  sceneCenter: {x: 170, y: 150}
+  sceneZoom: 0.36
+  openHour: 6
+  closeHour: 18
+  unlock:
+    lockedAtStart: 1
+    minDay: 1
+    requiredFlag: registered_jobseeker
+    hint: Register as a job seeker at the Employment Office.
+  actions:
+  - id: cargo
+    name: Cargo loading shift
+    description: Load cargo on the ships. Heavy, dangerous, and the best day rate on the waterfront.
+    kind: 1
+    cost: 0
+    wage: 480
+    durationMinutes: 360
+    hunger: -14
+    energy: -42
+    health: 0
+    minigameId: crane_drop
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: dong
+    startHourFrom: 6
+    startHourTo: 9
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0.05
+    riskHealth: 18
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: "A crate swings loose and slams into your side. (Health \u221218)"
+    resultMessage: You load cargo where your father used to work. The forklifts do the rest of what he used to do.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Sir Gomez (agency recruiter)
+    playerLine: Sir, I'm registered. Is there a cargo shift?
+    npcLines:
+    - Day rate's the best on the waterfront. Watch the cranes, nobody's insured here.
+    - One slot left on ship three. Sign here, and keep your head down.
+  - id: canteen
+    name: Work the port canteen
+    description: Cook and serve meals to dockworkers on a long shift.
+    kind: 1
+    cost: 0
+    wage: 340
+    durationMinutes: 300
+    hunger: -6
+    energy: -22
+    health: 0
+    minigameId: serve_line
+    skill: 3
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: inday
+    startHourFrom: 6
+    startHourTo: 10
+    oncePerDay: 1
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: worked_any
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Two hundred dockworkers fed. A few of them knew Dong.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Manang Luz (canteen)
+    playerLine: Manang Luz, do you need help in the canteen?
+    npcLines:
+    - Two hundred dockworkers at lunch. Serve fast and keep the lines moving.
+    - Apron's on the hook. The rice is ready, the soup is not.

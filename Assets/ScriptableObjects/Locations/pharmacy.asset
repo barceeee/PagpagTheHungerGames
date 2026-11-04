@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: pharmacy
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: pharmacy
+  displayName: Pharmacy
+  description: 'Ate Grace''s small botika by the road: a counter, a glass case of medicine, and a licensed pharmacist who tells you the truth about prices.'
+  mapLabelRect:
+    serializedVersion: 2
+    x: 700
+    y: 668
+    width: 160
+    height: 44
+  sceneCenter: {x: 780, y: 760}
+  sceneZoom: 0.36
+  openHour: 8
+  closeHour: 21
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: pharmacist
+    name: Ask the pharmacist
+    description: Ate Grace checks who in the family is sick, how bad it is, and how much medicine they need.
+    kind: 12
+    cost: 0
+    wage: 0
+    durationMinutes: 15
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Ate Grace writes it down for you.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ate Grace (pharmacist)
+    playerLine: Ate Grace, can you tell me what my family needs?
+    npcLines:
+    - Tell me everyone's symptoms and I'll tell you what to buy. Honestly, not what's most expensive.
+    - Sit down. Let's go through it one by one.
+  - id: buy_dose
+    name: Generic medicine (1 dose)
+    description: A day's dose of generic medicine for the cabinet at home. Each dose makes an illness ease for a day; a mild one needs one or two.
+    kind: 10
+    cost: 120
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 1
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Ate Grace wraps the tablets in paper and writes the dosage on it.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ate Grace (pharmacist)
+    playerLine: Medicine for a fever, please. The generic one.
+    npcLines:
+    - One dose a day until the fever is gone. Don't stop early, even if they feel better.
+    - Generic works the same, it's just cheaper. One dose lasts a day.
+  - id: buy_cure
+    name: Instant cure (branded)
+    description: The expensive branded treatment. Cures any illness at once, for anyone in the family. Kept in the cabinet until you use it.
+    kind: 10
+    cost: 2500
+    wage: 0
+    durationMinutes: 10
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Ate Grace hands you a small sealed box. "Keep it cool. Use it only if you must."
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 1
+    speaker: Ate Grace (pharmacist)
+    playerLine: I need the strongest thing you have. The one that works right away.
+    npcLines:
+    - It's very expensive, but it cures almost anything within the hour. Are you sure?
+    - This is the branded injection. It works fast, but it costs more than a month of rice.

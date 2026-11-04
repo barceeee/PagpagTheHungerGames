@@ -1,0 +1,328 @@
+{
+  "entries": [
+    {
+      "key": "common.yes",
+      "value": "Yes"
+    },
+    {
+      "key": "common.no",
+      "value": "No"
+    },
+    {
+      "key": "common.back",
+      "value": "Back"
+    },
+    {
+      "key": "common.close",
+      "value": "Close"
+    },
+    {
+      "key": "menu.tagline",
+      "value": "No money, no choices. Just survival."
+    },
+    {
+      "key": "menu.newgame",
+      "value": "New Game"
+    },
+    {
+      "key": "menu.continue",
+      "value": "Continue"
+    },
+    {
+      "key": "menu.continue.detail",
+      "value": "Day {0} — {1}"
+    },
+    {
+      "key": "menu.continue.none",
+      "value": "No saved game"
+    },
+    {
+      "key": "menu.quit",
+      "value": "Quit"
+    },
+    {
+      "key": "menu.hardcore",
+      "value": "HARDCORE — One life. No second chances."
+    },
+    {
+      "key": "menu.goal",
+      "value": "Survive 365 days. Find a stable job. Escape the slums."
+    },
+    {
+      "key": "menu.confirm.title",
+      "value": "Start a new game?"
+    },
+    {
+      "key": "menu.confirm.body",
+      "value": "This will permanently erase {0}'s current game (Day {1}). It cannot be undone."
+    },
+    {
+      "key": "cc.title",
+      "value": "Create Your Character"
+    },
+    {
+      "key": "cc.choose",
+      "value": "Choose Your Character"
+    },
+    {
+      "key": "cc.name",
+      "value": "Name"
+    },
+    {
+      "key": "cc.name.placeholder",
+      "value": "Enter a name..."
+    },
+    {
+      "key": "cc.name.err.short",
+      "value": "Name is too short ({0} letters minimum)."
+    },
+    {
+      "key": "cc.name.err.long",
+      "value": "Name is too long ({0} letters maximum)."
+    },
+    {
+      "key": "cc.name.err.chars",
+      "value": "Use letters, spaces, hyphens and apostrophes only."
+    },
+    {
+      "key": "cc.difficulty",
+      "value": "Difficulty"
+    },
+    {
+      "key": "cc.money",
+      "value": "Starting money: {0} — the same for every character and difficulty."
+    },
+    {
+      "key": "cc.infinite.locked",
+      "value": "Infinite Mode · locked (win {0} days)"
+    },
+    {
+      "key": "cc.infinite.off",
+      "value": "Infinite Mode: Off"
+    },
+    {
+      "key": "cc.infinite.on",
+      "value": "Infinite Mode: On"
+    },
+    {
+      "key": "cc.lore.button",
+      "value": "Read {0}'s Story"
+    },
+    {
+      "key": "cc.lore.title",
+      "value": "{0}'s Story"
+    },
+    {
+      "key": "cc.start",
+      "value": "Start Life"
+    },
+    {
+      "key": "cc.hardcore.note",
+      "value": "One life only. If you die, the game is over."
+    },
+    {
+      "key": "char.dong.desc",
+      "value": "Inday's husband and father of five. A former dock porter who lost his job when the port replaced its contract workers with forklifts. He works with his back: construction, hauling, cargo. The pay is better, but the work wears him down fast. His father's old friend, Mang Berto, is a foreman at the construction site."
+    },
+    {
+      "key": "char.inday.desc",
+      "value": "Dong's wife and mother of five. A fisherman's daughter from Leyte who came to Manila alone at nineteen. She works with her hands and her head: market stalls, laundry, minding a store. The pay is smaller but steadier, and she stretches every peso. Aling Nena, a market vendor, has been like a mother to her."
+    },
+    {
+      "key": "char.dong.lore.1",
+      "value": "{0} (Eduardo on his baptismal certificate) grew up on the edge of Manila Bay, in the shadow of the North Harbor cranes. His father, Mang Ramon, carried sacks of rice and cement off the ships for forty years. When {0} was sixteen, a cargo net snapped and his father never came home. {0} left school and took his place on the docks, working one six-month contract after another for twenty-two years, never kept long enough to become a regular worker."
+    },
+    {
+      "key": "char.dong.lore.2",
+      "value": "Seventeen years ago he started buying more kangkong than he could ever eat, just to talk to the quiet girl from Leyte who sold vegetables at Aling Nena's stall. Her name was Inday. They married in the barangay chapel with Mang Berto as their sponsor and moved into a rented room above the water in Tondo. Then came the children: Ed, Edd and Eddie (he named all three boys after himself, and Inday has never let him forget it), then Joy, and finally little Pia."
+    },
+    {
+      "key": "char.dong.lore.3",
+      "value": "Last month the shipping company brought in forklifts and cut every contract worker. The rent is overdue and the five-six lender comes around on Fridays. Between them, {0} and Inday have ₱500 and seven mouths to feed. Inday keeps the budget in a notebook and says they will manage. He wants to believe her. Mang Berto might still need hands at the construction site."
+    },
+    {
+      "key": "char.inday.lore.1",
+      "value": "{0} is the eldest of five children from a fishing village on the coast of Leyte. When a typhoon took her father's boat and her mother's little store in a single night, she answered an online ad for a housekeeping job in Manila. She was nineteen. She paid a recruiter ₱8,000, money her mother had borrowed against the next catch, and at the address she was given there was no employer, no house and no job."
+    },
+    {
+      "key": "char.inday.lore.2",
+      "value": "Aling Nena, a vendor from the same province, found {0} crying beside her stall at the public market and let her sleep among the vegetable crates. {0} repaid her by working the stall every morning. That is where she met Dong, a loud dock porter who bought far too much kangkong and told terrible jokes. She married him anyway. Seventeen years and five children later (Ed, Edd, Eddie, Joy and Pia), she still sends what she can home to Leyte."
+    },
+    {
+      "key": "char.inday.lore.3",
+      "value": "Now Dong has lost his job at the port. The rent is overdue, Edd needs school fees, Pia's inhaler is almost empty, and between them they have ₱500 for seven people. {0} writes every peso in a notebook. Dong works with his back, and she works with her hands and her head. Aling Nena always needs help at the market, and there is laundry to be washed all over the neighborhood."
+    },
+    {
+      "key": "intro.lore.title",
+      "value": "{0}'s Story"
+    },
+    {
+      "key": "intro.day1.title",
+      "value": "Day 1"
+    },
+    {
+      "key": "intro.howto.title",
+      "value": "How to Survive"
+    },
+    {
+      "key": "intro.howto",
+      "value": "Every stat runs from 0 to 100, and 100 is best. Everyone starts full. Hunger and energy drain every hour. When either runs out, health drains, and at 0 health a person dies. There is no second life, for you or for the children.\n\n•  Use the map to travel. Walking is free but slow; a jeepney costs ₱13.\n•  Every job is a minigame. You are paid by how well you play.\n•  Buy family food (Market, Sari-Sari, Fish Market, or cheap and risky pagpag) to fill the pantry.\n•  Open the family bar at the top to check on each child, feed them, or send them to work.\n•  Losing a child plunges you into a week of grief.\n\nDifficulty: {0}."
+    },
+    {
+      "key": "world.intro.m",
+      "value": "{0} wakes before dawn in the rented room above the water. Five children are asleep in a row on the floor mat. Inday is already awake, writing in her budget notebook by the light of her phone. \"{1},\" she says. \"That's all we have, for seven of us.\" The pantry is empty. If Mang Berto still runs a crew at the construction site, the morning shift starts early."
+    },
+    {
+      "key": "world.intro.f",
+      "value": "{0} wakes before dawn in the rented room above the water. Dong is still asleep, one arm over his eyes; the five children are curled up beside him. She opens her budget notebook: {1}, and that is everything they have, for seven of them. The pantry is empty. Aling Nena always needs help at the market in the morning, and the neighbors have laundry piling up."
+    },
+    {
+      "key": "world.menu",
+      "value": "Menu"
+    },
+    {
+      "key": "world.locations",
+      "value": "Locations"
+    },
+    {
+      "key": "world.return",
+      "value": "Return to Map"
+    },
+    {
+      "key": "world.actions",
+      "value": "What will you do?"
+    },
+    {
+      "key": "world.actions.empty",
+      "value": "Nothing to do here right now."
+    },
+    {
+      "key": "world.legend",
+      "value": "Click a place to travel. Green = here · Gold = open · Grey = closed · Red = locked"
+    },
+    {
+      "key": "world.gameover.title",
+      "value": "GAME OVER"
+    },
+    {
+      "key": "world.gameover.note",
+      "value": "Hardcore mode: this run has ended permanently."
+    },
+    {
+      "key": "world.gameover.menu",
+      "value": "Return to Main Menu"
+    },
+    {
+      "key": "world.victory.continue",
+      "value": "Keep Playing (Infinite)"
+    },
+    {
+      "key": "world.victory.finish",
+      "value": "Finish Run"
+    },
+    {
+      "key": "world.victory.leave",
+      "value": "Leave the Slums"
+    },
+    {
+      "key": "world.victory.leave.locked",
+      "value": "Leave the Slums · ₱{0} of ₱{1} saved"
+    },
+    {
+      "key": "dialog.never.mind",
+      "value": "Never mind"
+    },
+    {
+      "key": "dialog.go.work",
+      "value": "Start work"
+    },
+    {
+      "key": "dialog.go.eat",
+      "value": "Eat"
+    },
+    {
+      "key": "dialog.go.buy",
+      "value": "Buy"
+    },
+    {
+      "key": "dialog.go.pay",
+      "value": "Pay ₱{0}"
+    },
+    {
+      "key": "dialog.go.stay",
+      "value": "Stay close"
+    },
+    {
+      "key": "dialog.go.talk",
+      "value": "Go on"
+    },
+    {
+      "key": "world.leave.confirm.title",
+      "value": "Leave the slums?"
+    },
+    {
+      "key": "world.leave.confirm.body",
+      "value": "The family leaves Tondo for good. This ends the run."
+    },
+    {
+      "key": "world.leave.confirm.yes",
+      "value": "Leave"
+    },
+    {
+      "key": "world.leave.confirm.no",
+      "value": "Stay"
+    },
+    {
+      "key": "hud.health",
+      "value": "Health"
+    },
+    {
+      "key": "hud.hunger",
+      "value": "Hunger"
+    },
+    {
+      "key": "hud.fatigue",
+      "value": "Energy"
+    },
+    {
+      "key": "hud.location",
+      "value": "Tondo, Manila"
+    },
+    {
+      "key": "cc.couple",
+      "value": "Dong and Inday are husband and wife. They share one rented room and one budget, but they work different jobs and live different days. Choose whose life you will live."
+    },
+    {
+      "key": "intro.family.title",
+      "value": "Your Family"
+    },
+    {
+      "key": "intro.family",
+      "value": "Seven people live in the room above the water: you, {0}, and your five children. {0} stays home with them and serves meals from the pantry at 7 AM, noon and 6 PM, but only if there is food in it. Buy food for the family, keep everyone fed and rested, and send the older ones to work when you must. If a child dies, nothing brings them back."
+    },
+    {
+      "key": "world.family",
+      "value": "Family"
+    },
+    {
+      "key": "world.locations.toggle",
+      "value": "◄  Locations"
+    },
+    {
+      "key": "world.menu.confirm.title",
+      "value": "Return to the main menu?"
+    },
+    {
+      "key": "world.menu.confirm.body",
+      "value": "Your progress is saved. You can continue this life from the main menu."
+    },
+    {
+      "key": "world.menu.confirm.yes",
+      "value": "Main Menu"
+    },
+    {
+      "key": "world.menu.confirm.no",
+      "value": "Keep Playing"
+    }
+  ]
+}

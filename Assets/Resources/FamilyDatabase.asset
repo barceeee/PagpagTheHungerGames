@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9b5d85dff54994db447356b06bf81c, type: 3}
+  m_Name: FamilyDatabase
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Family.FamilyDatabase
+  children:
+  - {fileID: 11400000, guid: 5379a9b3a422e2d45ba5330ca56ced4b, type: 2}
+  - {fileID: 11400000, guid: 4ca81bbbceed31c4e95bb3e6fcc7e2e5, type: 2}
+  - {fileID: 11400000, guid: 07369edd0fe11e94ba8606994bcb6cd5, type: 2}
+  - {fileID: 11400000, guid: 22fda5a471fefd84f83cd707c23e698b, type: 2}
+  - {fileID: 11400000, guid: 487279d6d9022e848aeacdfd38a3d144, type: 2}
+  spouseAppetite: 0.9
+  spouseTireRate: 0.8
+  spouseFrailty: 1
+  servingRestore: 35
+  autoMealHours: 070000000c00000012000000i
+  autoMealThreshold: 75
+  pagpagSicknessChance: 0.15
+  pagpagSicknessDamage: 12
+  illness:
+    illnesses:
+    - id: typhoid
+      displayName: Typhoid fever
+      worsenPerDay: 10
+      damageScale: 1
+      randomWeight: 0
+      symptoms: High fever, stomach pain and weakness, from eating dirty, recooked food.
+    - id: flu
+      displayName: Flu
+      worsenPerDay: 6
+      damageScale: 0.8
+      randomWeight: 3
+      symptoms: Fever, chills and a cough that won't stop.
+    - id: dengue
+      displayName: Dengue fever
+      worsenPerDay: 12
+      damageScale: 1.3
+      randomWeight: 1
+      symptoms: 'A mosquito-borne fever: rash, joint pain and bleeding gums. It gets dangerous fast.'
+    onsetSeverity: 20
+    dailyCheckHour: 6
+    randomChancePerDay: 0.012
+    weakExtraChancePerDay: 0.03
+    pagpagIllnessId: typhoid
+    pagpagBaseChance: 0.02
+    pagpagPerStreakDay: 0.06
+    pagpagMaxChance: 0.6
+    damagePerHourAtMax: 1.2
+    energyDrainPerHourAtMax: 1.5
+    workBlockSeverity: 60
+    doseHours: 24
+    treatedRecoveryPerDay: 22
+    treatedDamageMultiplier: 0.4
+  childPayRate: 0.4
+  childMinEnergyToWork: 20
+  childMinHungerToWork: 20
+  depressionDays: 7
+  depressionDrainMultiplier: 1.5
+  depressionRecoveryMultiplier: 0.5
+  depressionPayMultiplier: 0.6
+  depressionEaseMultiplier: 0.8
+  pregnancyChance: 0.05
+  wheelSegments: 20

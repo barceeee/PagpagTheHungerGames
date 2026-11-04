@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44372a0557e5283488939cfd67d0fff4, type: 3}
+  m_Name: employment
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Locations.LocationData
+  id: employment
+  displayName: Employment Office
+  description: The Public Employment Service Office. Long lines, ceiling fans, and a job board full of postings asking for "college graduate, 18 to 25, pleasing personality."
+  mapLabelRect:
+    serializedVersion: 2
+    x: 948
+    y: 464
+    width: 177
+    height: 43
+  sceneCenter: {x: 1020, y: 560}
+  sceneZoom: 0.36
+  openHour: 8
+  closeHour: 17
+  unlock:
+    lockedAtStart: 0
+    minDay: 1
+    requiredFlag: 
+    hint: 
+  actions:
+  - id: register
+    name: Register as a job seeker
+    description: Pay for ID photos and forms, then register. Registered workers can apply for jobs at the port.
+    kind: 4
+    cost: 100
+    wage: 0
+    durationMinutes: 60
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: registered_jobseeker
+    setsFlag: registered_jobseeker
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: Your registration is stamped. The clerk says the port is hiring through an agency.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ms. Dela Cruz (clerk)
+    playerLine: I'd like to register as a job seeker.
+    npcLines:
+    - One hundred pesos for photos and forms. Fill in everything, even the parts that don't apply.
+    - "Take a number. Just kidding, there's nobody else today. \u20B1100 for the forms."
+  - id: job_board
+    name: Read the job board
+    description: See who is hiring.
+    kind: 3
+    cost: 0
+    wage: 0
+    durationMinutes: 20
+    hunger: 0
+    energy: 0
+    health: 0
+    minigameId: 
+    skill: 0
+    childMinAge: 0
+    servings: 0
+    pagpagServings: 0
+    character: 
+    startHourFrom: 0
+    startHourTo: 24
+    oncePerDay: 0
+    requiresSpouse: 0
+    requiresFlag: 
+    hiddenIfFlag: 
+    setsFlag: 
+    riskChance: 0
+    riskHealth: 0
+    riskEnergy: 0
+    riskCause: Injury
+    riskMessage: 
+    resultMessage: A warehouse is hiring regular workers with a solid work record. Keep working, and keep your record clean.
+    contactFlag: 
+    contactMessage: 
+    pagpagFood: 0
+    instantCure: 0
+    speaker: Ms. Dela Cruz (clerk)
+    playerLine: Is anyone hiring?
+    npcLines:
+    - The board has everything. Most want diplomas, but read it anyway.
+    - A few postings came in this week. Look at the bottom row, those don't need college.

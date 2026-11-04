@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7446c5aa414244aa9acb0a6d435524, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Pagpag.Runtime::Pagpag.Core.GameConfig
+  campaignDays: 365
+  victoryDays: 365
+  leaveSlumsQuota: 100000
+  startMinuteOfDay: 360
+  startLocationId: home
+  minNameLength: 2
+  maxNameLength: 16
+  normal: {fileID: 11400000, guid: 56cd31099a74f73498a7b14f4d62f874, type: 2}
+  hard: {fileID: 11400000, guid: 61dc33e6e9530f84d871ced82453370b, type: 2}
+  hungerDrainPerHourAwake: 3
+  hungerDrainPerHourAsleep: 1.5
+  energyDrainPerHourAwake: 2.5
+  energyRecoveryPerHourAsleep: 12.5
+  hungerDamageThreshold: 15
+  energyDamageThreshold: 10
+  minorDamagePerHour: 1
+  severeDamagePerHour: 4
+  regenMinHunger: 40
+  regenMinEnergy: 30
+  healthRegenPerHourAwake: 0.5
+  healthRegenPerHourAsleep: 1.5
+  hungerWarning: 25
+  energyWarning: 20
+  healthWarning: 35
+  minEnergyToWork: 15
+  minHungerToWork: 10
+  walkBaseMinutes: 5
+  walkMinutesPerMapWidth: 60
+  walkEnergyPerMapWidth: 8
+  jeepneyFare: 13
+  jeepneyBaseMinutes: 8
+  jeepneyMinutesPerMapWidth: 20
+  jeepneyMinDistance: 0.3
+  familyBedHour: 21
+  familyWakeHour: 6
