@@ -71,3 +71,6 @@ sysinfo.txt
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Web demo build output (Pagpag > Build Web Demo)
+/[Bb]uilds/
