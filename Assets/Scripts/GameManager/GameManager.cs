@@ -236,7 +236,10 @@ namespace Pagpag.Core
                     UnityEngine.Random.value, config, CurrentDifficulty, family)));
         }
 
-        /// <summary>Send a child to a job: the player plays the minigame on their behalf; the child's skills shape it.</summary>
+        /// <summary>
+        /// Send a child to a job. The child works it on their own (no minigame): performance comes from
+        /// their skill in the job's ability and their energy, with a little luck.
+        /// </summary>
         public bool StartChildJob(string childId, LocationData location, LocationAction action)
         {
             if (!CanAct()) return false;
@@ -249,25 +252,9 @@ namespace Pagpag.Core
                 return false;
             }
 
-            var mult = FamilyService.ChildPayMultiplier(child, action.skill, family);
-            var ctx = new MinigameContext
-            {
-                minigameId = action.minigameId,
-                jobName = action.name,
-                locationName = location.displayName,
-                workerName = child.displayName,
-                workerNote = $"{action.skill} {FamilyService.Stars(child.SkillValue(action.skill))} · {FamilyService.FitLabel(child, action.skill)} · Energy {Mathf.RoundToInt(member.energy)}",
-                ease = FamilyService.ChildEase(child, member, action.skill),
-                wage = action.wage,
-                payMultiplier = mult,
-                fullPay = JobRules.Payout(action.wage, JobRules.FullPayScore, mult),
-                maxPay = JobRules.Payout(action.wage, 1f, mult),
-                isChild = true,
-                seed = UnityEngine.Random.Range(0, int.MaxValue)
-            };
-            return OpenMinigame(ctx, result =>
-                Apply(FamilyService.CompleteChildJob(CurrentRun, family, child, member, location, action, result.score,
-                    !result.completed, UnityEngine.Random.value, config, CurrentDifficulty)));
+            var score = FamilyService.SimulateChildScore(child, member, action.skill, UnityEngine.Random.value);
+            return Apply(FamilyService.CompleteChildJob(CurrentRun, family, child, member, location, action, score,
+                false, UnityEngine.Random.value, config, CurrentDifficulty));
         }
 
         public bool FeedMember(string memberId)

@@ -11,7 +11,7 @@ namespace Pagpag.UI
 {
     /// <summary>
     /// The family overlay: every member's stats, personality and backstory; feeding; and choosing jobs
-    /// for the children (each job opens its minigame, played on the child's behalf).
+    /// for the children (children work jobs on their own, no minigame).
     /// </summary>
     public class FamilyPanel : MonoBehaviour
     {
@@ -158,7 +158,7 @@ namespace Pagpag.UI
             UIKit.Btn("Back", _jobs, new Vector2(-30, -20), new Vector2(160, 48), "◄ Back", () => ShowJobs(false), null, null, 20, new Vector2(1, 1))
                 .GetComponent<RectTransform>().pivot = new Vector2(1, 1);
             UIKit.Label("JobsHint", _jobs, new Vector2(30, -66), new Vector2(1020, 50),
-                "Children earn part of an adult's wage. You play the job's minigame for them; the better suited the child, the easier it is. Work drains their hunger and energy.",
+                "Children earn part of an adult's wage. They work the job on their own; the better suited and more rested the child, the more they earn. Work drains their hunger and energy.",
                 17, UIKit.Muted, TextAnchor.UpperLeft, FontStyle.Italic, new Vector2(0, 1), true).rectTransform.pivot = new Vector2(0, 1);
 
             var viewport = UIKit.Rect("Viewport", _jobs, new Vector2(0, -50), new Vector2(1040, 680));

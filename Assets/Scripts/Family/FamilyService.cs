@@ -251,6 +251,17 @@ namespace Pagpag.Family
         public static float ChildEase(ChildProfile c, MemberState m, Skill skill) =>
             (0.7f + 0.15f * (c.SkillValue(skill) - 1)) * (0.75f + 0.25f * m.energy / 100f);
 
+        /// <summary>
+        /// Performance (0–1) when a child works a job on their own instead of the player playing the minigame.
+        /// Skill 1 ≈ 45%, skill 3 ≈ 65%, skill 5 ≈ 85% when rested; tired children do worse. <paramref name="roll"/> (0–1) adds ±10% luck.
+        /// </summary>
+        public static float SimulateChildScore(ChildProfile c, MemberState m, Skill skill, float roll)
+        {
+            var baseScore = 0.45f + 0.1f * (c.SkillValue(skill) - 1);
+            var energyFactor = 0.8f + 0.2f * Mathf.Clamp01(m.energy / 100f);
+            return Mathf.Clamp01(baseScore * energyFactor + (roll - 0.5f) * 0.2f);
+        }
+
         /// <summary>Share of the adult wage this child earns at full performance.</summary>
         public static float ChildPayMultiplier(ChildProfile c, Skill skill, FamilyDatabase fam) =>
             fam.childPayRate * (0.7f + 0.15f * (c.SkillValue(skill) - 1));
@@ -275,7 +286,6 @@ namespace Pagpag.Family
 
             var report = new AdvanceReport();
             run.MarkUsedToday(a.id, m.id);
-            run.minigamesPlayed++;
 
             if (quit)
             {
